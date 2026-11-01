@@ -1,0 +1,786 @@
+{
+  "state": "ENTROPY1591_FIVE_LIVE_CAPTURE_AUDITS_COMPLETE_RATE_GAP_CONFIRMED_NOT_FULL_ACCEPTANCE",
+  "trials": [
+    {
+      "label": "q50",
+      "session": "field_20261029_171252_174290",
+      "frames": 1801,
+      "source_fps": 60.00014837437214,
+      "pose_fps": 11.833362596056727,
+      "preview_qt_updates_fps": 29.364354603563903,
+      "latest": {
+        "compression": "quality",
+        "jpeg_quality": 50,
+        "target_mbps": 36.0,
+        "actual_quality": 50,
+        "requested_quality": 50,
+        "frame_id": 1800,
+        "completed_frames": 1801,
+        "jpeg_payload_mbps": 89.78768,
+        "measured_source_fps": 60.00014837437214,
+        "feedback_status": "fixed_quality",
+        "host_ns": 32516344823099,
+        "exact_cbr": false,
+        "rate_controller_version": 1585,
+        "target_band_percent": null,
+        "quality_min": 50,
+        "quality_max": 50,
+        "preprocess_mode": 3,
+        "mode_changed": false,
+        "payload_window_frames": 60
+      },
+      "packet_profiles": {
+        "standard": 1801
+      },
+      "profile_transitions": [],
+      "quality_rate_samples": [
+        {
+          "mode": 3,
+          "quality": 50,
+          "frames": 1801,
+          "min_mbps": 54.61296,
+          "max_mbps": 96.3192,
+          "mean_mbps": 75.61816990560799
+        }
+      ],
+      "max_feedback_age_ms": 18.149447998439427,
+      "min_one_second_mbps": 68.812744,
+      "max_one_second_mbps": 91.490304,
+      "windows_outside_5percent": null,
+      "report": "E:\\FPGA_field_tests\\field_20261029_171252_174290\\report.json"
+    },
+    {
+      "label": "target8",
+      "session": "field_20261029_171336_553979",
+      "frames": 1801,
+      "source_fps": 60.00020088067274,
+      "pose_fps": 13.300044528549124,
+      "preview_qt_updates_fps": 29.410099135141287,
+      "latest": {
+        "compression": "target",
+        "jpeg_quality": 50,
+        "target_mbps": 8.0,
+        "actual_quality": 1,
+        "requested_quality": 1,
+        "frame_id": 1800,
+        "completed_frames": 1801,
+        "jpeg_payload_mbps": 10.86444,
+        "measured_source_fps": 60.00020088067274,
+        "feedback_status": "over_target_at_minimum",
+        "host_ns": 32560593104369,
+        "exact_cbr": false,
+        "rate_controller_version": 1585,
+        "target_band_percent": 5,
+        "quality_min": 1,
+        "quality_max": 75,
+        "preprocess_mode": 3,
+        "mode_changed": false,
+        "payload_window_frames": 60
+      },
+      "packet_profiles": {
+        "standard": 4,
+        "low": 1797
+      },
+      "profile_transitions": [
+        {
+          "frame_id": 4,
+          "quality": 5,
+          "profile": "low"
+        }
+      ],
+      "quality_rate_samples": [
+        {
+          "mode": 3,
+          "quality": 1,
+          "frames": 1617,
+          "min_mbps": 10.84176,
+          "max_mbps": 10.884,
+          "mean_mbps": 10.865185009276438
+        },
+        {
+          "mode": 3,
+          "quality": 2,
+          "frames": 60,
+          "min_mbps": 10.8408,
+          "max_mbps": 10.87056,
+          "mean_mbps": 10.857375999999999
+        },
+        {
+          "mode": 3,
+          "quality": 3,
+          "frames": 60,
+          "min_mbps": 10.15776,
+          "max_mbps": 11.72112,
+          "mean_mbps": 11.088128000000001
+        },
+        {
+          "mode": 3,
+          "quality": 5,
+          "frames": 60,
+          "min_mbps": 10.78944,
+          "max_mbps": 11.97648,
+          "mean_mbps": 11.373192
+        },
+        {
+          "mode": 3,
+          "quality": 50,
+          "frames": 4,
+          "min_mbps": 52.21776,
+          "max_mbps": 92.36016,
+          "mean_mbps": 80.54988
+        }
+      ],
+      "max_feedback_age_ms": 19.34744100071839,
+      "min_one_second_mbps": 10.857376,
+      "max_one_second_mbps": 15.94912,
+      "windows_outside_5percent": 1742,
+      "report": "E:\\FPGA_field_tests\\field_20261029_171336_553979\\report.json",
+      "hypothetical_fifo": {
+        "frames": 1801,
+        "target_mbps": 8.0,
+        "observed_completion_span_s": 29.999899559999903,
+        "total_jpeg_bytes": 41438178,
+        "peak_fifo_bytes": 11438279,
+        "max_completion_to_shaped_last_byte_ms": 11438.278440000106,
+        "worst_frame": 1800,
+        "idle_before_last_arrival_s": 0.0,
+        "tail_drain_s": 11.438278440000106,
+        "elapsed_from_first_completion_through_final_departure_s": 41.43817800000001,
+        "delay_budget_results": {
+          "10": {
+            "passed": false,
+            "frames_exceeding": 1801
+          },
+          "25": {
+            "passed": false,
+            "frames_exceeding": 1801
+          },
+          "50": {
+            "passed": false,
+            "frames_exceeding": 1801
+          },
+          "100": {
+            "passed": false,
+            "frames_exceeding": 1801
+          },
+          "200": {
+            "passed": false,
+            "frames_exceeding": 1800
+          }
+        },
+        "continuously_busy_between_first_last_arrival": true,
+        "exact_cbr_verified": false,
+        "hardware_shaper_implemented": false,
+        "physical_latency_verified": false,
+        "meaning": "hypothetical work-conserving payload FIFO; no claim of hardware CBR or indefinite stability"
+      }
+    },
+    {
+      "label": "target20_boundary",
+      "session": "field_20261029_171417_441793",
+      "frames": 1801,
+      "source_fps": 60.00017157449061,
+      "pose_fps": 13.10003746043045,
+      "preview_qt_updates_fps": 29.482855631678035,
+      "latest": {
+        "compression": "target",
+        "jpeg_quality": 50,
+        "target_mbps": 20.0,
+        "actual_quality": 9,
+        "requested_quality": 9,
+        "frame_id": 1800,
+        "completed_frames": 1801,
+        "jpeg_payload_mbps": 19.774984,
+        "measured_source_fps": 60.00017157449061,
+        "feedback_status": "within_band",
+        "host_ns": 32601428076973,
+        "exact_cbr": false,
+        "rate_controller_version": 1585,
+        "target_band_percent": 5,
+        "quality_min": 1,
+        "quality_max": 75,
+        "preprocess_mode": 3,
+        "mode_changed": false,
+        "payload_window_frames": 60
+      },
+      "packet_profiles": {
+        "standard": 15,
+        "low": 1786
+      },
+      "profile_transitions": [
+        {
+          "frame_id": 15,
+          "quality": 9,
+          "profile": "low"
+        }
+      ],
+      "quality_rate_samples": [
+        {
+          "mode": 3,
+          "quality": 9,
+          "frames": 1786,
+          "min_mbps": 19.69728,
+          "max_mbps": 19.86864,
+          "mean_mbps": 19.781286181410973
+        },
+        {
+          "mode": 3,
+          "quality": 15,
+          "frames": 11,
+          "min_mbps": 35.06112,
+          "max_mbps": 35.14224,
+          "mean_mbps": 35.101876363636364
+        },
+        {
+          "mode": 3,
+          "quality": 50,
+          "frames": 4,
+          "min_mbps": 53.60448,
+          "max_mbps": 76.59888,
+          "mean_mbps": 69.6618
+        }
+      ],
+      "max_feedback_age_ms": 18.187368001235882,
+      "min_one_second_mbps": 19.761832,
+      "max_one_second_mbps": 25.89944,
+      "windows_outside_5percent": 11,
+      "report": "E:\\FPGA_field_tests\\field_20261029_171417_441793\\report.json",
+      "hypothetical_fifo": {
+        "frames": 1801,
+        "target_mbps": 20.0,
+        "observed_completion_span_s": 29.99991421300001,
+        "total_jpeg_bytes": 74987802,
+        "peak_fifo_bytes": 801681,
+        "max_completion_to_shaped_last_byte_ms": 320.67232500074135,
+        "worst_frame": 14,
+        "idle_before_last_arrival_s": 0.021300213000010955,
+        "tail_drain_s": 0.0165068,
+        "elapsed_from_first_completion_through_final_departure_s": 30.01642101300001,
+        "delay_budget_results": {
+          "10": {
+            "passed": false,
+            "frames_exceeding": 1801
+          },
+          "25": {
+            "passed": false,
+            "frames_exceeding": 1639
+          },
+          "50": {
+            "passed": false,
+            "frames_exceeding": 1502
+          },
+          "100": {
+            "passed": false,
+            "frames_exceeding": 1225
+          },
+          "200": {
+            "passed": false,
+            "frames_exceeding": 677
+          }
+        },
+        "continuously_busy_between_first_last_arrival": false,
+        "exact_cbr_verified": false,
+        "hardware_shaper_implemented": false,
+        "physical_latency_verified": false,
+        "meaning": "hypothetical work-conserving payload FIFO; no claim of hardware CBR or indefinite stability"
+      }
+    },
+    {
+      "label": "target36_modes",
+      "session": "field_20261029_171458_343591",
+      "frames": 1801,
+      "source_fps": 59.99991104413585,
+      "pose_fps": 12.8666475905758,
+      "preview_qt_updates_fps": 29.436152415038833,
+      "latest": {
+        "compression": "target",
+        "jpeg_quality": 50,
+        "target_mbps": 36.0,
+        "actual_quality": 17,
+        "requested_quality": 17,
+        "frame_id": 1800,
+        "completed_frames": 1801,
+        "jpeg_payload_mbps": 37.674928,
+        "measured_source_fps": 59.99991104413585,
+        "feedback_status": "within_band",
+        "host_ns": 32642413206365,
+        "exact_cbr": false,
+        "rate_controller_version": 1585,
+        "target_band_percent": 5,
+        "quality_min": 1,
+        "quality_max": 75,
+        "preprocess_mode": 3,
+        "mode_changed": false,
+        "payload_window_frames": 60
+      },
+      "packet_profiles": {
+        "standard": 1801
+      },
+      "profile_transitions": [],
+      "quality_rate_samples": [
+        {
+          "mode": 0,
+          "quality": 17,
+          "frames": 31,
+          "min_mbps": 34.01952,
+          "max_mbps": 34.09056,
+          "mean_mbps": 34.059375483870966
+        },
+        {
+          "mode": 0,
+          "quality": 18,
+          "frames": 267,
+          "min_mbps": 34.85952,
+          "max_mbps": 35.0184,
+          "mean_mbps": 34.93948044943821
+        },
+        {
+          "mode": 1,
+          "quality": 18,
+          "frames": 31,
+          "min_mbps": 33.26592,
+          "max_mbps": 33.36048,
+          "mean_mbps": 33.31619612903226
+        },
+        {
+          "mode": 1,
+          "quality": 19,
+          "frames": 60,
+          "min_mbps": 33.94368,
+          "max_mbps": 34.05072,
+          "mean_mbps": 34.007264
+        },
+        {
+          "mode": 1,
+          "quality": 20,
+          "frames": 182,
+          "min_mbps": 34.46256,
+          "max_mbps": 34.62528,
+          "mean_mbps": 34.55196131868132
+        },
+        {
+          "mode": 2,
+          "quality": 20,
+          "frames": 31,
+          "min_mbps": 33.71568,
+          "max_mbps": 33.80112,
+          "mean_mbps": 33.75897290322581
+        },
+        {
+          "mode": 2,
+          "quality": 21,
+          "frames": 243,
+          "min_mbps": 34.36512,
+          "max_mbps": 34.49424,
+          "mean_mbps": 34.42869530864198
+        },
+        {
+          "mode": 3,
+          "quality": 17,
+          "frames": 740,
+          "min_mbps": 37.55232,
+          "max_mbps": 37.85952,
+          "mean_mbps": 37.695488432432434
+        },
+        {
+          "mode": 3,
+          "quality": 18,
+          "frames": 60,
+          "min_mbps": 38.64048,
+          "max_mbps": 38.81952,
+          "mean_mbps": 38.721191999999995
+        },
+        {
+          "mode": 3,
+          "quality": 19,
+          "frames": 60,
+          "min_mbps": 39.88944,
+          "max_mbps": 40.08096,
+          "mean_mbps": 39.975672
+        },
+        {
+          "mode": 3,
+          "quality": 21,
+          "frames": 31,
+          "min_mbps": 42.33888,
+          "max_mbps": 42.59424,
+          "mean_mbps": 42.470492903225804
+        },
+        {
+          "mode": 3,
+          "quality": 24,
+          "frames": 60,
+          "min_mbps": 45.85776,
+          "max_mbps": 46.18416,
+          "mean_mbps": 45.997128
+        },
+        {
+          "mode": 3,
+          "quality": 50,
+          "frames": 5,
+          "min_mbps": 53.66832,
+          "max_mbps": 76.82592,
+          "mean_mbps": 71.16096
+        }
+      ],
+      "max_feedback_age_ms": 17.26356299695908,
+      "min_one_second_mbps": 33.653608,
+      "max_one_second_mbps": 48.084456,
+      "windows_outside_5percent": 369,
+      "report": "E:\\FPGA_field_tests\\field_20261029_171458_343591\\report.json",
+      "hypothetical_fifo": {
+        "frames": 1801,
+        "target_mbps": 36.0,
+        "observed_completion_span_s": 30.000044477998017,
+        "total_jpeg_bytes": 137932852,
+        "peak_fifo_bytes": 3160785,
+        "max_completion_to_shaped_last_byte_ms": 702.3965973321576,
+        "worst_frame": 1800,
+        "idle_before_last_arrival_s": 0.050696186441284055,
+        "tail_drain_s": 0.7023965973321576,
+        "elapsed_from_first_completion_through_final_departure_s": 30.702441075330174,
+        "delay_budget_results": {
+          "10": {
+            "passed": false,
+            "frames_exceeding": 1801
+          },
+          "25": {
+            "passed": false,
+            "frames_exceeding": 1716
+          },
+          "50": {
+            "passed": false,
+            "frames_exceeding": 1673
+          },
+          "100": {
+            "passed": false,
+            "frames_exceeding": 1584
+          },
+          "200": {
+            "passed": false,
+            "frames_exceeding": 1352
+          }
+        },
+        "continuously_busy_between_first_last_arrival": false,
+        "exact_cbr_verified": false,
+        "hardware_shaper_implemented": false,
+        "physical_latency_verified": false,
+        "meaning": "hypothetical work-conserving payload FIFO; no claim of hardware CBR or indefinite stability"
+      }
+    },
+    {
+      "label": "target26_gap",
+      "session": "field_20261029_171731_231714",
+      "frames": 1801,
+      "source_fps": 60.000201486676765,
+      "pose_fps": 13.033377100717008,
+      "preview_qt_updates_fps": 29.44053328821829,
+      "latest": {
+        "compression": "target",
+        "jpeg_quality": 50,
+        "target_mbps": 26.0,
+        "actual_quality": 9,
+        "requested_quality": 9,
+        "frame_id": 1800,
+        "completed_frames": 1801,
+        "jpeg_payload_mbps": 22.267208,
+        "measured_source_fps": 60.000201486676765,
+        "feedback_status": "below_band",
+        "host_ns": 32795360043886,
+        "exact_cbr": false,
+        "rate_controller_version": 1585,
+        "target_band_percent": 5,
+        "quality_min": 1,
+        "quality_max": 75,
+        "preprocess_mode": 3,
+        "mode_changed": false,
+        "payload_window_frames": 60
+      },
+      "packet_profiles": {
+        "standard": 1216,
+        "low": 585
+      },
+      "profile_transitions": [
+        {
+          "frame_id": 136,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 196,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 316,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 376,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 496,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 556,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 676,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 736,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 856,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 916,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 1036,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 1096,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 1216,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 1276,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 1396,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 1456,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 1576,
+          "quality": 9,
+          "profile": "low"
+        },
+        {
+          "frame_id": 1636,
+          "quality": 12,
+          "profile": "standard"
+        },
+        {
+          "frame_id": 1756,
+          "quality": 9,
+          "profile": "low"
+        }
+      ],
+      "quality_rate_samples": [
+        {
+          "mode": 3,
+          "quality": 9,
+          "frames": 585,
+          "min_mbps": 19.60176,
+          "max_mbps": 19.77696,
+          "mean_mbps": 19.692800000000002
+        },
+        {
+          "mode": 3,
+          "quality": 10,
+          "frames": 600,
+          "min_mbps": 29.98032,
+          "max_mbps": 30.14736,
+          "mean_mbps": 30.057796
+        },
+        {
+          "mode": 3,
+          "quality": 12,
+          "frames": 600,
+          "min_mbps": 32.01792,
+          "max_mbps": 32.21328,
+          "mean_mbps": 32.1244192
+        },
+        {
+          "mode": 3,
+          "quality": 19,
+          "frames": 11,
+          "min_mbps": 40.04064,
+          "max_mbps": 40.18464,
+          "mean_mbps": 40.1232
+        },
+        {
+          "mode": 3,
+          "quality": 50,
+          "frames": 5,
+          "min_mbps": 53.52576,
+          "max_mbps": 77.58912,
+          "mean_mbps": 71.756832
+        }
+      ],
+      "max_feedback_age_ms": 28.63161400091485,
+      "min_one_second_mbps": 19.675088,
+      "max_one_second_mbps": 36.893104,
+      "windows_outside_5percent": 1484,
+      "report": "E:\\FPGA_field_tests\\field_20261029_171731_231714\\report.json",
+      "hypothetical_fifo": {
+        "frames": 1801,
+        "target_mbps": 26.0,
+        "observed_completion_span_s": 29.999899256999925,
+        "total_jpeg_bytes": 103395326,
+        "peak_fifo_bytes": 6488490,
+        "max_completion_to_shaped_last_byte_ms": 1996.4583010794283,
+        "worst_frame": 1755,
+        "idle_before_last_arrival_s": 0.0,
+        "tail_drain_s": 1.8140472045385367,
+        "elapsed_from_first_completion_through_final_departure_s": 31.81394646153846,
+        "delay_budget_results": {
+          "10": {
+            "passed": false,
+            "frames_exceeding": 1801
+          },
+          "25": {
+            "passed": false,
+            "frames_exceeding": 1801
+          },
+          "50": {
+            "passed": false,
+            "frames_exceeding": 1800
+          },
+          "100": {
+            "passed": false,
+            "frames_exceeding": 1798
+          },
+          "200": {
+            "passed": false,
+            "frames_exceeding": 1792
+          }
+        },
+        "continuously_busy_between_first_last_arrival": true,
+        "exact_cbr_verified": false,
+        "hardware_shaper_implemented": false,
+        "physical_latency_verified": false,
+        "meaning": "hypothetical work-conserving payload FIFO; no claim of hardware CBR or indefinite stability"
+      }
+    }
+  ],
+  "same_quantized_samples": [
+    {
+      "session": "field_20261029_171336_553979",
+      "frame": 300,
+      "native_bytes": 22620,
+      "standard_entropy_bytes": 46471,
+      "saving": 0.5132448193497019,
+      "identical_decoded_pixels": true,
+      "scope": "Independent offline recoding of this exact native JPEG, not a second hardware capture"
+    },
+    {
+      "session": "field_20261029_171336_553979",
+      "frame": 900,
+      "native_bytes": 22645,
+      "standard_entropy_bytes": 46493,
+      "saving": 0.5129374314412922,
+      "identical_decoded_pixels": true,
+      "scope": "Independent offline recoding of this exact native JPEG, not a second hardware capture"
+    },
+    {
+      "session": "field_20261029_171336_553979",
+      "frame": 1500,
+      "native_bytes": 22638,
+      "standard_entropy_bytes": 46489,
+      "saving": 0.5130460969261545,
+      "identical_decoded_pixels": true,
+      "scope": "Independent offline recoding of this exact native JPEG, not a second hardware capture"
+    },
+    {
+      "session": "field_20261029_171417_441793",
+      "frame": 900,
+      "native_bytes": 41120,
+      "standard_entropy_bytes": 60270,
+      "saving": 0.31773685083789616,
+      "identical_decoded_pixels": true,
+      "scope": "Independent offline recoding of this exact native JPEG, not a second hardware capture"
+    }
+  ],
+  "candidate_bit_sha256": "2adf26d60c19b60d4f5ef76ce28698173fea18e22cf84217916bf89edbee53bf",
+  "production_recovery_profile_changed": false,
+  "flash_written": false,
+  "two_hour_started": false,
+  "exact_cbr": false,
+  "pose_accuracy_verified": false,
+  "physical_latency_verified": false,
+  "optical_fps_verified": false,
+  "harness_note": "1588 completed all four capture audits but process returned 1 during Qt teardown. The 1590 harness stops its timer, deletes its window and quits QApplication explicitly, prints CLEAN_RETURN and returns 0. The earlier exit is retained, not rewritten.",
+  "inputs": {
+    "D:\\FPGA\\workspace\\artifacts\\audit_entropy1591.py": "efd0238656788fbed2aeb9f7c0ec76862d15722079e7abadd7f2c423cd28482b",
+    "D:\\FPGA\\workspace\\artifacts\\entropy_live1588_20261029\\status.json": "0b7ae9a8ba48502018b2217e9e721fa680f900dcbd5f98c9634af57cbfbe4023",
+    "D:\\FPGA\\workspace\\artifacts\\entropy_gap1590_20261029\\status.json": "1eabfe1a02008cbb2e9d247ed91fc4c3fc40ab12615ce68924aabcb0bff8f15d",
+    "D:\\FPGA\\workspace\\field_console\\rate_buffer1579.py": "e3b7c53211c81ec0401fbd0d5810f6bfd57ca5be92ca5a96441c068e1010a476",
+    "D:\\FPGA\\workspace\\artifacts\\entropy1567.py": "c50c2e4923114d4609d44687f5d850aaacef2b4095ce3822da4a048fea565533",
+    "D:\\FPGA\\workspace\\artifacts\\feedback1585_20261029\\observer1589\\status.json": "071a920d41a44074c3d7c157ef021a53a83aac59c848ef918f4979fcdc2fc44b",
+    "E:\\FPGA_field_tests\\field_20261029_171252_174290\\report.json": "82b942f433b95dd5979c6cee94c7cba8a101d27554f090feb7e9a3c1968f3a48",
+    "E:\\FPGA_field_tests\\field_20261029_171252_174290\\source.frames.jsonl": "4998cdd4c5817f6d0ee0c544b3687a07134bcc527968bd361a8fc7acfd1c1cd0",
+    "E:\\FPGA_field_tests\\field_20261029_171252_174290\\source.timestamps.jsonl": "1d3f088244f15050c27414b11c700b9ea2f894a3edc9adbf4024d0542fdcfaf2",
+    "E:\\FPGA_field_tests\\field_20261029_171252_174290\\compression.frames.jsonl": "e2998da25d2e003bcd03e20b43fd9b88bd1e9ff8c1fd90e4885ae4a9cf5af2a4",
+    "E:\\FPGA_field_tests\\field_20261029_171252_174290\\preprocess.frames.jsonl": "fa72bd526ca27971f43acfdfc5391a0d3496f4d6a25f05db93abbf96340c9d45",
+    "E:\\FPGA_field_tests\\field_20261029_171252_174290\\pose.frames.jsonl": "becb5734a5e267f26981742aa7c68e8300e68085781b8bcaa4840bd049b6a321",
+    "E:\\FPGA_field_tests\\field_20261029_171252_174290\\clip_01.mkv": "ee019415151c390a5dd1007888dbe891436cbf819f032ee13e69bd0c3b0ebac0",
+    "E:\\FPGA_field_tests\\field_20261029_171252_174290\\clip_01.frames.jsonl": "c481b9b0b1193f86db3dfcc1ed8a3a04dd98fceaff31294725651d7c08967e52",
+    "E:\\FPGA_field_tests\\field_20261029_171336_553979\\report.json": "eb8e3b1a8ff7215c56cad6819771aabd101e5ec44082fc98a59545309c122f94",
+    "E:\\FPGA_field_tests\\field_20261029_171336_553979\\source.frames.jsonl": "78a8a5c56e77ae4fd02d7ff7d21853a787c1577ad4ae77339f77f123b9fb1a9a",
+    "E:\\FPGA_field_tests\\field_20261029_171336_553979\\source.timestamps.jsonl": "823e3d525339de6383792f151ca066ae91d62ecf66eab71b560210265e999278",
+    "E:\\FPGA_field_tests\\field_20261029_171336_553979\\compression.frames.jsonl": "d49aaacb4ecb5a87627961bae4e8278e79c73d4ec5d1d35fae5a314b38d4c93e",
+    "E:\\FPGA_field_tests\\field_20261029_171336_553979\\preprocess.frames.jsonl": "fa72bd526ca27971f43acfdfc5391a0d3496f4d6a25f05db93abbf96340c9d45",
+    "E:\\FPGA_field_tests\\field_20261029_171336_553979\\pose.frames.jsonl": "b130914d9315578bf5068c76cde76e7512e2113e22da18ccd0912e2476b52bb7",
+    "E:\\FPGA_field_tests\\field_20261029_171336_553979\\clip_01.mkv": "2dd811980565ca0400f21f8ae2a3f94a57b3a0d101abe58ee7fe9047cf5f3861",
+    "E:\\FPGA_field_tests\\field_20261029_171336_553979\\clip_01.frames.jsonl": "15242be1396dd2f7e43cf9b6135fd6bf9166e75af3fad8ea7bf95af15cff0423",
+    "E:\\FPGA_field_tests\\field_20261029_171417_441793\\report.json": "0777247ffce44676b2e6ff185a3a54a1d0b5be4ddfa8034371127a0821285e24",
+    "E:\\FPGA_field_tests\\field_20261029_171417_441793\\source.frames.jsonl": "8e053ef2d266ed66d0901ad912a90b329276a51425eabafb5a54529f15f3c9b7",
+    "E:\\FPGA_field_tests\\field_20261029_171417_441793\\source.timestamps.jsonl": "c035000aa87ff506d6fa4adc2c03ec03c3cae3df3d6cf42e49256e430cda999e",
+    "E:\\FPGA_field_tests\\field_20261029_171417_441793\\compression.frames.jsonl": "14bceafb7ad5dfd793a2d5ff38f1b7985aa383131bb28f7e9acbe0c5f11abc0b",
+    "E:\\FPGA_field_tests\\field_20261029_171417_441793\\preprocess.frames.jsonl": "fa72bd526ca27971f43acfdfc5391a0d3496f4d6a25f05db93abbf96340c9d45",
+    "E:\\FPGA_field_tests\\field_20261029_171417_441793\\pose.frames.jsonl": "50cbd23277736b3f0e609b450976e305a6f4fb3ddb281eb74a43a3253f5a5167",
+    "E:\\FPGA_field_tests\\field_20261029_171417_441793\\clip_01.mkv": "50c3bc81b78c4e6537f8eb2d0a08984a1ee5fe187777e69a86bb4d5a54ffda30",
+    "E:\\FPGA_field_tests\\field_20261029_171417_441793\\clip_01.frames.jsonl": "184e875c2ee19b008204d0590ec0739e5dbcf1264d61d79c0df460799e0dc97f",
+    "E:\\FPGA_field_tests\\field_20261029_171458_343591\\report.json": "48a83fa5e444d13e9228f4da5177d7b70151be4e50880ff435942b5c842c7ca1",
+    "E:\\FPGA_field_tests\\field_20261029_171458_343591\\source.frames.jsonl": "194764a46f717ded97a44c4e50d48b1162f5ed0da2c2ddb9dc68148d28837b62",
+    "E:\\FPGA_field_tests\\field_20261029_171458_343591\\source.timestamps.jsonl": "bc9b10f398be7159de75a6723219196340c3d6b7ca7032fd8b5be08ea2fec6c4",
+    "E:\\FPGA_field_tests\\field_20261029_171458_343591\\compression.frames.jsonl": "def0324e26910fef650cb04d11b2d080714ba717c4d27e4022598d68822f954f",
+    "E:\\FPGA_field_tests\\field_20261029_171458_343591\\preprocess.frames.jsonl": "7cf00fc338482e52782f85bde4e101b873062bfc8f6326676dd9a423f29a098a",
+    "E:\\FPGA_field_tests\\field_20261029_171458_343591\\pose.frames.jsonl": "f56f97e4461fb88c62c0d145ae376ec5bbf65e34a2f432c3ae8ba845feac0678",
+    "E:\\FPGA_field_tests\\field_20261029_171458_343591\\clip_01.mkv": "120e9552257004ca0ef8a66510f83a399cd2da0873fbc60fc636f922cd485935",
+    "E:\\FPGA_field_tests\\field_20261029_171458_343591\\clip_01.frames.jsonl": "eed7410a94e53369e885230f4390fd24fd887f1ca366c208bb93c416aa149cd1",
+    "E:\\FPGA_field_tests\\field_20261029_171731_231714\\report.json": "3b22ad53bd876da2d08c2aa30901a2a52ebe9737d5d8d73e9180207f5fde4e7e",
+    "E:\\FPGA_field_tests\\field_20261029_171731_231714\\source.frames.jsonl": "8358e6e76ccd4101e3e4a5fcb2dbdd565ff6f4035aa09987a871c8dd7359c7dc",
+    "E:\\FPGA_field_tests\\field_20261029_171731_231714\\source.timestamps.jsonl": "7173216048805890b5e0fbda643ea2c968c73efeb4e4e6a40b3f620ded0e707c",
+    "E:\\FPGA_field_tests\\field_20261029_171731_231714\\compression.frames.jsonl": "42614283bed430a13e98d81660453b6311ff37018ae113f85627054c0ad9bb2d",
+    "E:\\FPGA_field_tests\\field_20261029_171731_231714\\preprocess.frames.jsonl": "fa72bd526ca27971f43acfdfc5391a0d3496f4d6a25f05db93abbf96340c9d45",
+    "E:\\FPGA_field_tests\\field_20261029_171731_231714\\pose.frames.jsonl": "02caff1bee603032f6340d2b3a5145d7b9437c60f3cf837ef2c566303094daa9",
+    "E:\\FPGA_field_tests\\field_20261029_171731_231714\\clip_01.mkv": "8023fdab5af023ad1c14f4a55d974ae076260de3878c8ac9285a6918dba4e488",
+    "E:\\FPGA_field_tests\\field_20261029_171731_231714\\clip_01.frames.jsonl": "4934c1a90607495f6f66c2fcc08e1096eaeb1aecd51fcd353d6e075829eb16c3"
+  },
+  "total_verified_frames": 9005,
+  "all_source_drop_abort_errors_zero": true,
+  "rate_gap_profile_transitions": 19
+}

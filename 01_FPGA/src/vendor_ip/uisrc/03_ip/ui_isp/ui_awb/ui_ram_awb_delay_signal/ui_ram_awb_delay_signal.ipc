@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Ph2aBlockMemConfig>
+    <Config>
+        <BYTE_WRITE_WIDTH>None</BYTE_WRITE_WIDTH>
+        <COMMON_CLOCK>FALSE</COMMON_CLOCK>
+        <ENABLE_DEBUG>FALSE</ENABLE_DEBUG>
+        <ENABLE_ECC>FALSE</ENABLE_ECC>
+        <ERAM_HARDWARE>ERAM</ERAM_HARDWARE>
+        <ERROR_INJECT_DOUBLE>FALSE</ERROR_INJECT_DOUBLE>
+        <ERROR_INJECT_SINGLE>FALSE</ERROR_INJECT_SINGLE>
+        <INITIALIZE_MEMORY>FALSE</INITIALIZE_MEMORY>
+        <MEMORY_TYPE>RAM-Dual Port</MEMORY_TYPE>
+        <OPTI_OPTION>AREA</OPTI_OPTION>
+        <PORT_A_MEM_DEPTH>2048</PORT_A_MEM_DEPTH>
+        <PORT_A_MEM_WIDTH>96</PORT_A_MEM_WIDTH>
+        <PORT_A_OPER_ENABLE>Always Enable</PORT_A_OPER_ENABLE>
+        <PORT_A_OPER_MODE>Write_before_read</PORT_A_OPER_MODE>
+        <PORT_A_OUTPUT_REG>None</PORT_A_OUTPUT_REG>
+        <PORT_A_RESET_MODE>Async</PORT_A_RESET_MODE>
+        <PORT_A_SSR_OVER_CE>FALSE</PORT_A_SSR_OVER_CE>
+        <PORT_A_USE_RESET>FALSE</PORT_A_USE_RESET>
+        <PORT_A_WIDTH_STEP>1</PORT_A_WIDTH_STEP>
+        <PORT_B_ENABLE_ECC_PIPE>FALSE</PORT_B_ENABLE_ECC_PIPE>
+        <PORT_B_MEM_DEPTH>2048</PORT_B_MEM_DEPTH>
+        <PORT_B_MEM_WIDTH>Same As Port A</PORT_B_MEM_WIDTH>
+        <PORT_B_OPER_ENABLE>Always Enable</PORT_B_OPER_ENABLE>
+        <PORT_B_OPER_MODE>Read_before_write</PORT_B_OPER_MODE>
+        <PORT_B_OUTPUT_REG>None</PORT_B_OUTPUT_REG>
+        <PORT_B_RESET_MODE>Async</PORT_B_RESET_MODE>
+        <PORT_B_SSR_OVER_CE>FALSE</PORT_B_SSR_OVER_CE>
+        <PORT_B_USE_RESET>FALSE</PORT_B_USE_RESET>
+        <USE_INIT_FILE>FALSE</USE_INIT_FILE>
+        <USE_REMAIN_VAL>FALSE</USE_REMAIN_VAL>
+    </Config>
+    <GeneralConfig>
+        <Device>PH1A90SEG324</Device>
+        <IP_ID>67</IP_ID>
+        <Type>Embedded RAM/ROM</Type>
+        <Version>1.0</Version>
+        <create_VHDL>false</create_VHDL>
+        <inst>ui_ram_awb_delay_signal</inst>
+    </GeneralConfig>
+    <GeneratedFiles>
+        <Verilog Enable="true">ui_ram_awb_delay_signal.v</Verilog>
+    </GeneratedFiles>
+</Ph2aBlockMemConfig>

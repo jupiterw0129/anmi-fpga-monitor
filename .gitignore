@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.local.json
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.apk
+*.aab
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+05_测试/artifacts/rate1609_20261029/
